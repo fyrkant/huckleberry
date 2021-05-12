@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
 html,
@@ -10,3 +10,87 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --spacing-1: 8px;
+  --spacing-2: 16px;
+  --spacing-3: 24px;
+  --spacing-4: 32px;
+  --spacing-5: 48px;
+  --spacing-6: 64px;
+  --spacing-7: 96px;
+  --spacing-8: 128px;
+
+  --primary: hsl(160deg, 100%, 30%);
+
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+
+  --gray-black: hsl(0deg, 0%, 0%);
+  --gray-very-dark: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --gray-white: hsl(0deg, 0%, 100%);
+}
+
+header {
+  background-color: #fff;
+}
+
+.max-width-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 600px;
+  padding-left: var(--spacing-2);
+  padding-right: var(--spacing-2);
+}
+
+.intro-chunk {
+  max-width: 300px;
+  padding-top: var(--spacing-3);
+  padding-bottom: var(--spacing-3);
+}
+
+.intro-chunk .title {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-5);
+}
+
+.intro-chunk p {
+  font-size: 1.25rem;
+}
+
+.intro-chunk strong {
+  color: var(--primary);
+}
+
+body {
+  background-color: var(--gray-light);
+}
+
+main {
+  border-top: 5px solid var(--gray-dark);
+  padding-top: var(--spacing-4);
+}
+
+.card {
+  background-color: white;
+  border-bottom: 5px solid var(--gray-dark);
+  padding: var(--spacing-2);
+  margin-left: calc(var(--spacing-2) * -1);
+  margin-right: calc(var(--spacing-2) * -1);
+}
+
+.indented-heading {
+  font-size: 1.5rem;
+  margin: 0;
+  background-color: var(--secondary-light);
+  border-bottom: 5px solid var(--secondary-dark);
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: var(--spacing-2) var(--spacing-4);
+  margin-top: calc(var(--spacing-1) * -1);
+  margin-left: calc(var(--spacing-4) * -1);
+  margin-right: var(--spacing-1);
+}
